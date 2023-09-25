@@ -131,8 +131,15 @@ h6 {
 }
 
 .header__content-img {
+   // background: url(/images/pink-fool.jpg);
+   // background-size: cover;
+   // background-position: center;
+   // background-repeat: no-repeat;
+   // height: 100vh;
+   // width: 100vw;
    text-align: center;
    padding-bottom: 50px;
+   max-width: 100%;
 
    &::before {
       content: '';
@@ -145,6 +152,7 @@ h6 {
       width: 100%;
       background: linear-gradient(180deg, #CADBEB 0%, rgba(234.81, 234.81, 234.81, 0) 100%);
    }
+
 }
 
 .title {
@@ -157,6 +165,7 @@ h6 {
 .title--pod {
    position: relative;
    z-index: -1;
+
 }
 
 .title--s {
@@ -371,9 +380,6 @@ h6 {
    color: #fff;
    text-align: center;
 
-   // .footer__link
-
-   &__link {}
 
    // .footer__text
 
@@ -397,16 +403,39 @@ h6 {
    }
 }
 
+
 @media(max-width:1220px) {
-   .header__content-img img{
-      max-width: 100%;
+
+   .title{
+      transform: none;
+      font-size: 140px;
+      padding-top: 20vh;
+      left: 0;
+      right: 0;
+      text-align: center;
    }
+
+   .title--pod{
+      z-index: 1;
+   }
+
+   .title--s{
+      transform: none;
+   }
+   .title--m{
+      transform: none;
+   }
+   .title--ax{
+      transform: none;
+   }
+
+
 
    .choose-color__list {
       flex-wrap: wrap;
    }
 
-   .title{
+   .title {
       font-size: 180px;
    }
 }
@@ -476,7 +505,8 @@ h6 {
    .energy-num {
       font-size: 92px;
    }
-   .case img{
+
+   .case img {
       max-width: 100%;
    }
 

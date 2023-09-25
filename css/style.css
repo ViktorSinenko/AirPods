@@ -130,6 +130,7 @@ h6 {
 .header__content-img {
   text-align: center;
   padding-bottom: 50px;
+  max-width: 100%;
 }
 .header__content-img::before {
   content: "";
@@ -306,8 +307,25 @@ h6 {
 }
 
 @media (max-width: 1220px) {
-  .header__content-img img {
-    max-width: 100%;
+  .title {
+    transform: none;
+    font-size: 140px;
+    padding-top: 20vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .title--pod {
+    z-index: 1;
+  }
+  .title--s {
+    transform: none;
+  }
+  .title--m {
+    transform: none;
+  }
+  .title--ax {
+    transform: none;
   }
   .choose-color__list {
     flex-wrap: wrap;
